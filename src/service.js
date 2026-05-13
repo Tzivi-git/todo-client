@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // הגדרת כתובת ה-API הבסיסית לשרת שלנו
-axios.defaults.baseURL = "http://localhost:5000"; 
+axios.defaults.baseURL = "http://localhost:5022"; 
 
 // הוספת Interceptor לתפיסת שגיאות ורישום ללוג
 axios.interceptors.response.use(

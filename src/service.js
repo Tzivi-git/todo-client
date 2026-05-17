@@ -27,8 +27,12 @@ export default {
   },
 
   // עדכון משימה (סימון כבוצע/לא בוצע)
-  setCompleted: async (id, isComplete) => {
-    await axios.put(`/items/${id}`, { isComplete });
+  // setCompleted: async (id, isComplete) => {
+  //   await axios.put(`/items/${id}`, { isComplete });
+  //   return {};
+  // },
+  setCompleted: async (id, name, isComplete) => {
+    await axios.put(`/items/${id}`, { name, isComplete });
     return {};
   },
 
